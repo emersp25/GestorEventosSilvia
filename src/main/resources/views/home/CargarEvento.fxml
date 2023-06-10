@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home.CargarEvento">
+   <children>
+      <SplitPane dividerPositions="0.23618090452261306" layoutX="65.0" layoutY="26.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="133.0" layoutY="-63.0" prefHeight="91.0" prefWidth="598.0" style="-fx-background-color: RED;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="CARGAR EVENTOS">
+                           <font>
+                              <Font name="Bodoni MT Black" size="35.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane layoutY="-51.0" orientation="VERTICAL" prefHeight="196.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <Pane prefHeight="238.0" prefWidth="596.0" style="-fx-background-color: BLACK;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button layoutX="119.0" layoutY="78.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="278.0" style="-fx-background-color: #c2b291;" text="Seleccionar Archivo" textFill="#e80909">
+                                       <font>
+                                          <Font name="System Bold" size="26.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnRegresarAd" layoutX="448.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#cambiarCarga" style="-fx-background-color: #c2b291;" text="REGRESAR" textFill="#e80909">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="449.0" layoutY="100.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" style="-fx-background-color: #c2b291;" text="CARGAR" textFill="#e80909">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <Button layoutX="447.0" layoutY="159.0" mnemonicParsing="false" style="-fx-background-color: #c2b291;" text="CANCELAR" textFill="#e80909">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Button>
+                                    <SVGPath content="M40,60 C42,48 44,30 25,32" layoutX="216.0" layoutY="133.0" />
+                                 </children>
+                                 <effect>
+                                    <InnerShadow>
+                                       <input>
+                                          <Glow />
+                                       </input>
+                                    </InnerShadow>
+                                 </effect>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

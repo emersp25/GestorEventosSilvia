@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home.Evento">
+   <children>
+      <SplitPane dividerPositions="0.20481927710843373" layoutX="90.0" layoutY="-20.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <HBox alignment="CENTER" layoutX="48.0" layoutY="6.0" prefHeight="99.0" prefWidth="698.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label prefHeight="53.0" prefWidth="395.0" text="CREACION DE EVENTO" textFill="WHITE">
+                           <font>
+                              <Font name="Roboto Thin" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.8567774936061381" layoutX="80.0" layoutY="199.0" orientation="VERTICAL" prefHeight="393.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: black;">
+                           <children>
+                              <Label layoutX="24.0" layoutY="251.0" text="Agregar Encargado" textFill="#f80808">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font></Label>
+                              <Button layoutX="382.0" layoutY="260.0" mnemonicParsing="false" onMouseClicked="#cambiarPrecio" text="AGREGAR PRECIO DE ENTRADAS" />
+                              <Button layoutX="565.0" layoutY="62.0" mnemonicParsing="false" text="CARGAR FOTO" />
+                              <Button fx:id="btnEncargado" layoutX="187.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#cambiarEncargado" text="+" />
+                              <Label layoutX="382.0" layoutY="176.0" text="Hora Inicio" textFill="#f80808">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="512.0" layoutY="176.0" text="Hora Fin" textFill="#f80808">
+                                 <font>
+                                    <Font name="System Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="404.0" layoutY="13.0" prefHeight="149.0" prefWidth="149.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="14.0" layoutY="-36.0" prefHeight="53.0" prefWidth="696.0" spacing="100.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="btnRegresarAdministrador" mnemonicParsing="false" onMouseClicked="#cambiarEvento" prefHeight="30.0" prefWidth="130.0" text="REGRESAR" />
+                                    <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="GUARDAR" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+                  <Label layoutX="6.0" layoutY="31.0" prefHeight="26.0" prefWidth="154.0" text="Nombre Evento" textFill="#f80808">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></Label>
+                  <Label layoutX="45.0" layoutY="79.0" text="Sinópsis" textFill="#f80808">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font></Label>
+                  <TextArea layoutX="143.0" layoutY="71.0" prefHeight="80.0" prefWidth="206.0" />
+                  <TextField layoutX="143.0" layoutY="27.0" prefHeight="26.0" prefWidth="206.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="24.0" layoutY="274.0" prefHeight="26.0" prefWidth="121.0" text="Fecha Evento" textFill="#f80808">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <DatePicker layoutX="143.0" layoutY="279.0" />
+      <TextField layoutX="390.0" layoutY="313.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField layoutX="517.0" layoutY="313.0" prefHeight="26.0" prefWidth="80.0" />
+   </children>
+</AnchorPane>

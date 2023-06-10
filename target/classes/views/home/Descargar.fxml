@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home.Descargar">
+   <children>
+      <Label layoutX="150.0" layoutY="28.0" text="DESCARGAR TICKET" textFill="#f50101">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="355.0" text="regresar cliente" textFill="#f50505" />
+      <Button fx:id="btnRegresarCliente" layoutX="134.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#cambiarDescargar" text="+" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.home.DetalleBoleto">
+   <children>
+      <SplitPane dividerPositions="0.18473895582329317" layoutX="98.0" layoutY="77.0" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="102.0" prefWidth="698.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="DETALLE POR BOLETO" textFill="#ff0202">
+                           <font>
+                              <Font name="Roboto Thin" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="270.0" prefWidth="698.0">
+               <children>
+                  <SplitPane dividerPositions="0.8354114713216958" layoutX="68.0" layoutY="145.0" orientation="VERTICAL" prefHeight="403.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <SplitPane dividerPositions="0.3181818181818182" layoutX="112.0" layoutY="52.0" orientation="VERTICAL" prefHeight="332.0" prefWidth="696.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <Label fx:id="txtNombreEvento" layoutX="206.0" layoutY="14.0" prefHeight="43.0" prefWidth="257.0" text="NOMBRE EVENTO">
+                                             <font>
+                                                <Font name="System Bold" size="29.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="357.0" layoutY="69.0" text="Asientos Disponibles">
+                                             <font>
+                                                <Font name="Roboto Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="17.0" layoutY="68.0" text="Asientos Ocupados">
+                                             <font>
+                                                <Font name="Roboto Light" size="18.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="txtNombreEvento1" layoutX="218.0" layoutY="65.0" text="# Asientos">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="txtNombreEvento11" layoutX="563.0" layoutY="65.0" text="# Asientos">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                       <children>
+                                          <TableView layoutX="109.0" layoutY="-10.0" prefHeight="222.0" prefWidth="694.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn prefWidth="143.0" text="ASIENTO OCUPADO" />
+                                              <TableColumn minWidth="7.0" prefWidth="167.0" text="Nombre" />
+                                                <TableColumn minWidth="7.0" prefWidth="126.0" text="Apellido" />
+                                                <TableColumn minWidth="7.0" prefWidth="139.0" text="email" />
+                                                <TableColumn minWidth="7.0" prefWidth="118.0" text="Telefono" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <HBox alignment="CENTER" layoutX="42.0" layoutY="4.0" prefHeight="63.0" prefWidth="696.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onMouseClicked="#cambiarListaBoleto" text="REGRESAR" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
